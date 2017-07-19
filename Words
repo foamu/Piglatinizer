@@ -1,0 +1,29 @@
+package piglatin;
+
+public class Words {
+	
+	private String[] words = new String[] {
+			"Orange",
+			"Banana",
+			"Strawberry",
+			"Kiwi",
+			"Plum",
+			"Zuchini",
+			"Watermelon",
+			"Rasberry",
+			"Lettuce",
+			"Tomato",
+			"Cucumber",
+			"Lemon",
+			"Pineapple"
+	};
+
+	public String[] getWords() {
+		return words;
+	}
+
+	public void setWords(String[] words) {
+		this.words = words;
+	}
+	
+}
