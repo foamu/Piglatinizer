@@ -1,0 +1,27 @@
+package piglatin;
+
+public class App {
+
+	public static void main(String[] args) {
+
+		Words words = new Words();
+
+		final String vowels = "aeiouAEIOU";
+
+		for (String word : words.getWords()) {
+			
+				String beforeVowel = "";
+				int cut = 0;
+				while (cut < word.length() && !vowels.contains("" + word.charAt(cut))) {
+					beforeVowel += word.charAt(cut);
+					cut++;
+				}
+				if (cut == 0) {
+					cut = 1;
+					word += word.toLowerCase().charAt(0) + "w";
+				}
+				System.out.println(word.substring(cut) + beforeVowel.toLowerCase() + "ay");
+			}
+		}
+
+	}
